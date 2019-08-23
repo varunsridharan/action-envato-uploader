@@ -1,0 +1,23 @@
+name: 'Envato Uploader'
+description: 'Github Action Which Uploads Files Onto Envato FTP'
+author: 'varunsridharan'
+branding:
+  icon: 'hard-drive'  
+  color: 'green'
+inputs:
+  envato_username:
+    description: 'Envato.com Account Username'
+    default: ''
+  envato_personal_token:
+    description: 'Envato.com Account Personal Access Token'
+    default: ''
+  envato_dist_dir:
+    description: 'Local Dir TO Upload Files From'
+    default: './dist'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.envato_username }}
+    - ${{ inputs.envato_personal_token }}
+    - ${{ inputs.envato_dist_dir }}
