@@ -49,7 +49,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Enavto FTP Uploader
-    - uses: varunsridharan/action-envato-uploader@master
+      uses: varunsridharan/action-envato-uploader@master
       with:
         envato_username: ${{ secrets.envato_username }}
         envato_personal_token: ${{ secrets.envato_personal_token }}

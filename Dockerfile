@@ -4,6 +4,6 @@ RUN apk add lftp
 
 COPY entrypoint.sh /entrypoint.sh
 
-RUN chmod 777 entrypoint.sh
+RUN chmod +x /*.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
