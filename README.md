@@ -42,7 +42,7 @@ on:
     - refs/tags/*
 
 jobs:
-  envatoftp:
+  Envato_Uploader:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
