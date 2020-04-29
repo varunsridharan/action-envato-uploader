@@ -1,5 +1,3 @@
-> **⚠️ Note:** To use this GitHub Action, you must have access to GitHub Actions. GitHub Actions are currently only available in public beta. You can [apply for Github Actions beta access here](https://github.com/features/actions).
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/varunsridharan/action-envato-uploader/master/assets/logo.png" alt="Envato"/>
 </p>
