@@ -22,7 +22,7 @@ Pull requests represent a proposed solution to a specified problem. They should 
 
 ## Workflow
 
-This repository currently only uses the `master` branch, which should always be stable and usable. Releases will be tagged as needed.
+This repository currently only uses the `main` branch, which should always be stable and usable. Releases will be tagged as needed.
 
 ## Release instructions
 

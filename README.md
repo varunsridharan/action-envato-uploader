@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/varunsridharan/action-envato-uploader/master/assets/logo.png" alt="Envato"/>
+  <img src="https://raw.githubusercontent.com/varunsridharan/action-envato-uploader/main/assets/logo.png" alt="Envato"/>
 </p>
 
 # Envato FTP Uploader - ***Github Action***
@@ -25,10 +25,10 @@ Github Action Which Uploads Files Onto Envato FTP
 6. Scroll Down & Click Create Token
 
 ### Create Token Option
-![https://raw.githubusercontent.com/varunsridharan/action-envato-uploader/master/assets/1566526864-182.jpg](https://raw.githubusercontent.com/varunsridharan/action-envato-uploader/master/assets/1566526864-182.jpg)
+![https://raw.githubusercontent.com/varunsridharan/action-envato-uploader/main/assets/1566526864-182.jpg](https://raw.githubusercontent.com/varunsridharan/action-envato-uploader/master/assets/1566526864-182.jpg)
 
 ### Token Permissions
-![https://raw.githubusercontent.com/varunsridharan/action-envato-uploader/master/assets/1566526963-120.jpg](https://raw.githubusercontent.com/varunsridharan/action-envato-uploader/master/assets/1566526963-120.jpg)
+![https://raw.githubusercontent.com/varunsridharan/action-envato-uploader/main/assets/1566526963-120.jpg](https://raw.githubusercontent.com/varunsridharan/action-envato-uploader/master/assets/1566526963-120.jpg)
 
 ---
 
@@ -47,7 +47,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Enavto FTP Uploader
-      uses: varunsridharan/action-envato-uploader@master
+      uses: varunsridharan/action-envato-uploader@main
       with:
         envato_username: ${{ secrets.envato_username }}
         envato_personal_token: ${{ secrets.envato_personal_token }}
