@@ -22,7 +22,7 @@ gh_log_group_end
 
 gh_log " "
 gh_log_group_start  "💿 Files To Be Copied From : ${ENVATO_DIST_DIR}"
-tree -a -C -h --filelimit "100" -L "-1"
+tree -a -C -h --filelimit 100
 gh_log_group_end
 
 gh_log " "
