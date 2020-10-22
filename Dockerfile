@@ -1,6 +1,4 @@
-FROM alpine:latest
-
-RUN apk add lftp
+FROM varunsridharan/actions-alpine:latest
 
 COPY entrypoint.sh /entrypoint.sh
 
