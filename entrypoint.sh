@@ -19,7 +19,7 @@ ls -lah
 gh_log_group_end
 
 gh_log_group_start  "⌛ Copying To FTP"
-lftp "ftp.marketplace.envato.com" -u $ENVATO_USERNAME,$ENVATO_PERSONAL_TOKEN -e "set ftp:ssl-allow yes; mirror --verbose=3 -R ./ ./; quit"
+lftp "ftp.marketplace.envato.com" -u $ENVATO_USERNAME,$ENVATO_PERSONAL_TOKEN -e "set ftp:ssl-allow yes; mirror --verbose=1 -R ./ ./; quit"
 gh_log_group_end
 
 gh_log "👌 FTP Upload Complete"
