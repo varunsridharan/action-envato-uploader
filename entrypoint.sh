@@ -17,12 +17,7 @@ cd $ENVATO_DIST_DIR
 
 gh_log " "
 gh_log_group_start  "💿 Files To Be Copied From : ${ENVATO_DIST_DIR}"
-ls -lahR | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'
-gh_log_group_end
-
-gh_log " "
-gh_log_group_start  "💿 Files To Be Copied From : ${ENVATO_DIST_DIR}"
-tree -a -C -h --filelimit 100
+tree -a -C -h -D  --filelimit 100
 gh_log_group_end
 
 gh_log " "
