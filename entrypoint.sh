@@ -21,6 +21,11 @@ ls -lahR | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e '
 gh_log_group_end
 
 gh_log " "
+gh_log_group_start  "💿 Files To Be Copied From : ${ENVATO_DIST_DIR}"
+tree -a -C -h --filelimit "100" -L "-1"
+gh_log_group_end
+
+gh_log " "
 gh_log_group_start  "⌛ Copying To FTP"
 lftp "ftp.marketplace.envato.com" -u $ENVATO_USERNAME,$ENVATO_PERSONAL_TOKEN -e "set ftp:ssl-allow yes; mirror -R ./ ./; quit"
 gh_log_group_end
