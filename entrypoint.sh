@@ -10,7 +10,7 @@ ENVATO_USERNAME=$(gh_input "ENVATO_USERNAME")
 ENVATO_PERSONAL_TOKEN=$(gh_input "ENVATO_PERSONAL_TOKEN")
 ENVATO_DIST_DIR=$(gh_input "ENVATO_DIST_DIR" "./dist")
 
-gh_log "⬆️Envato Upload Started"
+gh_log "⬆️ Envato Upload Started"
 
 cd $ENVATO_DIST_DIR
 
@@ -19,7 +19,7 @@ ls -lah
 gh_log_group_end
 
 gh_log_group_start  "⌛ Copying To FTP"
-  lftp "ftp.marketplace.envato.com" -u $ENVATO_USERNAME,$ENVATO_PERSONAL_TOKEN -e "set ftp:ssl-allow yes; mirror --verbose=3 -R ./ ./; quit"
+lftp "ftp.marketplace.envato.com" -u $ENVATO_USERNAME,$ENVATO_PERSONAL_TOKEN -e "set ftp:ssl-allow yes; mirror --verbose=3 -R ./ ./; quit"
 gh_log_group_end
 
 gh_log "👌 FTP Upload Complete"
